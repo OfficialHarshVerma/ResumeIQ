@@ -81,18 +81,37 @@ The system also uses human-rated benchmark resumes to assess the consistency of 
 TalentLens/
 │
 ├── evals/
-│   └── test_resumes/
-│
+│   ├── test_resumes/
+│   │
+│   ├── application_eval.py
+│   ├── eval_suite.py
+│   │
+│   ├── generator_evaluator.py
+│   ├── generator_export.py
+│   ├── gen_eval_temp.py
+│   ├── generator_golden_dataset.csv
+│   ├── generator_golden_dataset.json
+│   ├── generated_outputs.json
+│   │
+│   ├── pipeline_evaluator.py
+│   ├── pipeline_export.py
+│   ├── pipeline_outputs.json
+│   │
+│   ├── retriever_eval.py
+│   ├── retriever_golden_dataset.json
+│   ├── resume_retrieval_golden_dataset_v0.2.json
+│   │
+│   └── evaluation_results.csv
+|
 ├── storage/
 │   ├── chroma_db/
 │   └── benchmarks.db
 │
 ├── user.py
 ├── retriever_eval.py
-├── generator_evaluator.py
-├── pipeline_evaluator.py
-├── application_evaluator.py
-├── eval_suite.py
+├── benchmarks.py
+├── resume_utilities.py
+├── test.py
 │
 ├── requirements.txt
 ├── .env.example
@@ -163,4 +182,4 @@ TalentLens is actively under development. The current implementation focuses on 
 
 B.Tech – Electronics and Communication Engineering
 
-Interested in Artificial Intelligence, Machine Learning, and Generative AI.
+Practical in Artificial Intelligence, Machine Learning, and Generative AI.
