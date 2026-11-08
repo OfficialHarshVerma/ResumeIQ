@@ -1,0 +1,94 @@
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+
+# =========================
+# IDE and editor
+# =========================
+.idea/
+.vscode/
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Private resume files
+# =========================
+evals/test_resumes/
+
+# =========================
+# Generated evaluation outputs
+# =========================
+evals/generated_outputs.json
+evals/pipeline_outputs.json
+evals/evaluation_results.csv
+
+# =========================
+# Vector database
+# =========================
+storage/chroma_db/
+
+# =========================
+# Logs and temporary files
+# =========================
+*.log
+*.tmp
+temp/
+tmp/
+
+# =========================
+# Model artifacts
+# =========================
+*.pkl
+*.joblib
+*.safetensors
+
+
+# Excluded modules during current project cleanup
+main.py
+test.py
+benchmark_metadata.csv
+models/
+prompts/
+tools/
+dummy_resumes/
+
+# Storage
+/storage/chroma_db/
+
+# Evaluation outputs and private test data
+/evals/test_resumes/
+/evals/generated_outputs.json
+/evals/pipeline_outputs.json
+/evals/evaluation_results.csv
+
+# Synthetic development data
+/dummy_resumes/
+
+# Python cache
+__pycache__/

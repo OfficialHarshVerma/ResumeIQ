@@ -1,0 +1,218 @@
+{
+  "dataset_name": "AI Engineer Resume Retrieval Golden Labels",
+  "version": "0.1-manual-draft",
+  "relevance_basis": "Technical/soft skill overlap only, matching the current add_embeddings() implementation. strong/average/weak labels are not relevance labels.",
+  "review_note": "Manual draft labels; review before reporting final metrics. Benchmark Aarav Mehta is excluded from strong_10 because the test file also names Aarav Mehta; verify these are distinct profiles before including it.",
+  "queries": [
+    {
+      "query_id": "average_08",
+      "test_file": "average_08.pdf",
+      "relevant_benchmark_fingerprints": [
+        "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+        "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+        "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+        "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+        "80cdd76fac6a29381587d557a64b1621b1582f8d1514e9213299b943660c1a53",
+        "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971"
+      ],
+      "relevant_benchmark_names": [
+        "Rohan Kulkarni",
+        "Neha Thomas",
+        "Aditya Singh",
+        "Rohan Verma",
+        "Priya Nair",
+        "Kabir Singh"
+      ]
+    },
+    {
+      "query_id": "average_09",
+      "test_file": "average_09.pdf",
+      "relevant_benchmark_fingerprints": [
+        "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+        "80cdd76fac6a29381587d557a64b1621b1582f8d1514e9213299b943660c1a53",
+        "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+        "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+        "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc"
+      ],
+      "relevant_benchmark_names": [
+        "Neha Thomas",
+        "Priya Nair",
+        "Rohan Verma",
+        "Kabir Singh",
+        "Ishita Rao"
+      ]
+    },
+    {
+      "query_id": "average_10",
+      "test_file": "average_10.pdf",
+      "relevant_benchmark_fingerprints": [
+        "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+        "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+        "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+        "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+        "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+        "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+        "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+        "80cdd76fac6a29381587d557a64b1621b1582f8d1514e9213299b943660c1a53",
+        "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971"
+      ],
+      "relevant_benchmark_names": [
+        "Rohan Kulkarni",
+        "Sana Qureshi",
+        "Neha Thomas",
+        "Diya Sharma",
+        "Kabir Nair",
+        "Ishita Rao",
+        "Rohan Verma",
+        "Priya Nair",
+        "Kabir Singh"
+      ]
+    },
+    {
+      "query_id": "strong_08",
+      "test_file": "strong_08.pdf",
+      "relevant_benchmark_fingerprints": [
+        "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+        "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+        "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+        "80cdd76fac6a29381587d557a64b1621b1582f8d1514e9213299b943660c1a53",
+        "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+        "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+        "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+        "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9"
+      ],
+      "relevant_benchmark_names": [
+        "Rohan Kulkarni",
+        "Vikram Desai",
+        "Neha Thomas",
+        "Priya Nair",
+        "Kabir Singh",
+        "Maya Sharma",
+        "Arjun Mehta",
+        "Fatima Khan"
+      ]
+    },
+    {
+      "query_id": "strong_09",
+      "test_file": "strong_09.pdf",
+      "relevant_benchmark_fingerprints": [
+        "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+        "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+        "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+        "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+        "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+        "80cdd76fac6a29381587d557a64b1621b1582f8d1514e9213299b943660c1a53",
+        "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+        "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9"
+      ],
+      "relevant_benchmark_names": [
+        "HARSH VERMA",
+        "Sana Qureshi",
+        "Vikram Desai",
+        "Neha Thomas",
+        "Kabir Nair",
+        "Priya Nair",
+        "Maya Sharma",
+        "Fatima Khan"
+      ]
+    },
+    {
+      "query_id": "strong_10",
+      "test_file": "strong_10.pdf",
+      "relevant_benchmark_fingerprints": [
+        "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+        "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+        "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+        "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+        "80cdd76fac6a29381587d557a64b1621b1582f8d1514e9213299b943660c1a53",
+        "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+        "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157"
+      ],
+      "relevant_benchmark_names": [
+        "HARSH VERMA",
+        "Diya Sharma",
+        "Kabir Nair",
+        "Ishita Rao",
+        "Priya Nair",
+        "Maya Sharma",
+        "Arjun Mehta"
+      ]
+    },
+    {
+      "query_id": "weak_08",
+      "test_file": "weak_08.pdf",
+      "relevant_benchmark_fingerprints": [
+        "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+        "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+        "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+        "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+        "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5"
+      ],
+      "relevant_benchmark_names": [
+        "Aditya Singh",
+        "Pooja Verma",
+        "Kavya Reddy",
+        "Aman Gupta",
+        "Rahul Das"
+      ]
+    },
+    {
+      "query_id": "weak_09",
+      "test_file": "weak_09.pdf",
+      "relevant_benchmark_fingerprints": [
+        "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+        "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+        "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+        "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0"
+      ],
+      "relevant_benchmark_names": [
+        "Vikram Desai",
+        "Manav Patel",
+        "Fatima Khan",
+        "Sonal Yadav"
+      ]
+    },
+    {
+      "query_id": "weak_10",
+      "test_file": "weak_10.pdf",
+      "relevant_benchmark_fingerprints": [
+        "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+        "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+        "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+        "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+        "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5"
+      ],
+      "relevant_benchmark_names": [
+        "Aditya Singh",
+        "Pooja Verma",
+        "Kavya Reddy",
+        "Aman Gupta",
+        "Rahul Das"
+      ]
+    }
+  ],
+  "benchmark_fingerprints_by_candidate": {
+    "HARSH VERMA": "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+    "Rohan Kulkarni": "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+    "Sana Qureshi": "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+    "Vikram Desai": "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+    "Neha Thomas": "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+    "Aarav Mehta": "13eb6464ec87fff432606af987242788441fa001870599391c3e69c03aba0631",
+    "Diya Sharma": "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+    "Kabir Nair": "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+    "Ishita Rao": "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+    "Aditya Singh": "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+    "Pooja Verma": "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+    "Manav Patel": "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+    "Kavya Reddy": "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+    "Rohan Verma": "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+    "Priya Nair": "80cdd76fac6a29381587d557a64b1621b1582f8d1514e9213299b943660c1a53",
+    "Kabir Singh": "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+    "Maya Sharma": "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+    "Arjun Mehta": "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+    "Fatima Khan": "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+    "Aman Gupta": "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+    "Sonal Yadav": "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0",
+    "Rahul Das": "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5"
+  }
+}

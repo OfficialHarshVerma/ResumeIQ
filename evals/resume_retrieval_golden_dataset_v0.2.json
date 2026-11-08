@@ -1,0 +1,942 @@
+{
+  "dataset_name": "AI Engineer Resume Retrieval Golden Labels",
+  "version": "0.2-manual-draft",
+  "description": "Binary query-specific relevance labels based only on embedded resume content: skills, certifications, experience and projects. Personal information and education are excluded.",
+  "relevance_definition": {
+    "1": "relevant",
+    "0": "not relevant",
+    "relevant_per_query": 5
+  },
+  "embedded_fields_used": [
+    "skills.technical_skills",
+    "skills.soft_skills",
+    "skills.certifications",
+    "experience.job_title",
+    "experience.responsibilities",
+    "projects.project_name",
+    "projects.description",
+    "projects.technologies",
+    "projects.key_features"
+  ],
+  "excluded_fields": [
+    "personal_info",
+    "education"
+  ],
+  "benchmark_fingerprints": {
+    "Harsh Verma": "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+    "Rohan Kulkarni": "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+    "Sana Qureshi": "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+    "Vikram Desai": "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+    "Neha Thomas": "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+    "Aarav Mehta": "13eb6464ec87fff432606af987242788441fa001870599391c3e69c03aba0631",
+    "Diya Sharma": "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+    "Kabir Nair": "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+    "Ishita Rao": "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+    "Aditya Singh": "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+    "Pooja Verma": "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+    "Manav Patel": "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+    "Kavya Reddy": "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+    "Rohan Verma": "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+    "Priya Nair": "80cdd76fac6a29381587d557a64b1621b1584f8d1514e9213299b943660c1a53",
+    "Kabir Singh": "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+    "Maya Sharma": "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+    "Arjun Mehta": "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+    "Fatima Khan": "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+    "Aman Gupta": "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+    "Sonal Yadav": "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0",
+    "Rahul Das": "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5"
+  },
+  "queries": {
+    "average_08": {
+      "relevant": [
+        {
+          "fingerprint": "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+          "relevance": 1,
+          "reason": "Python, SQL, data science and tabular ML overlap with analytics and introductory ML."
+        },
+        {
+          "fingerprint": "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+          "relevance": 1,
+          "reason": "Python, Pandas, NumPy, scikit-learn and applied ML projects overlap strongly."
+        },
+        {
+          "fingerprint": "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+          "relevance": 1,
+          "reason": "Excel, Python, SQL, Pandas and introductory ML overlap with data analysis skills."
+        },
+        {
+          "fingerprint": "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+          "relevance": 1,
+          "reason": "Excel, reporting, basic SQL and data-analysis workflows overlap with reporting experience."
+        },
+        {
+          "fingerprint": "80cdd76fac6a29381587d557a64b1621b1584f8d1514e9213299b943660c1a53",
+          "relevance": 1,
+          "reason": "Python, SQL, scikit-learn and a classifier project overlap with programming and introductory ML."
+        }
+      ],
+      "non_relevant": [
+        {
+          "fingerprint": "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "13eb6464ec87fff432606af987242788441fa001870599391c3e69c03aba0631",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5",
+          "relevance": 0
+        }
+      ]
+    },
+    "average_09": {
+      "relevant": [
+        {
+          "fingerprint": "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+          "relevance": 1,
+          "reason": "Python backend development, APIs and hosted-model integrations overlap with Flask and AI summarization."
+        },
+        {
+          "fingerprint": "80cdd76fac6a29381587d557a64b1621b1584f8d1514e9213299b943660c1a53",
+          "relevance": 1,
+          "reason": "Python, Flask, REST APIs and SQL overlap with web development and API integration."
+        },
+        {
+          "fingerprint": "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+          "relevance": 1,
+          "reason": "Python AI applications, API integration and chatbot-related work overlap with the AI feature prototype."
+        },
+        {
+          "fingerprint": "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+          "relevance": 1,
+          "reason": "Python, FastAPI and AI application/workflow development overlap with backend and AI integration."
+        },
+        {
+          "fingerprint": "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+          "relevance": 1,
+          "reason": "Python and scikit-learn projects overlap with Python and introductory ML skills."
+        }
+      ],
+      "non_relevant": [
+        {
+          "fingerprint": "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "13eb6464ec87fff432606af987242788441fa001870599391c3e69c03aba0631",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5",
+          "relevance": 0
+        }
+      ]
+    },
+    "average_10": {
+      "relevant": [
+        {
+          "fingerprint": "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+          "relevance": 1,
+          "reason": "Python, Pandas, NumPy, scikit-learn and ML projects overlap with data preparation and supervised learning."
+        },
+        {
+          "fingerprint": "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+          "relevance": 1,
+          "reason": "Python, NumPy, Pandas, scikit-learn and classification projects overlap with the ML workflow."
+        },
+        {
+          "fingerprint": "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+          "relevance": 1,
+          "reason": "Python, SQL, data science and classical ML overlap with analytics and ML skills."
+        },
+        {
+          "fingerprint": "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+          "relevance": 1,
+          "reason": "NLP, TF-IDF and text-classification projects overlap with introductory NLP and sentiment classification."
+        },
+        {
+          "fingerprint": "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+          "relevance": 1,
+          "reason": "Python, SQL, classical ML and text/NLP-related projects overlap with ML and text classification."
+        }
+      ],
+      "non_relevant": [
+        {
+          "fingerprint": "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "13eb6464ec87fff432606af987242788441fa001870599391c3e69c03aba0631",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "80cdd76fac6a29381587d557a64b1621b1584f8d1514e9213299b943660c1a53",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5",
+          "relevance": 0
+        }
+      ]
+    },
+    "strong_08": {
+      "relevant": [
+        {
+          "fingerprint": "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+          "relevance": 1,
+          "reason": "Recommendation-system work and Python/ML experience overlap with the recommendation prototype."
+        },
+        {
+          "fingerprint": "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+          "relevance": 1,
+          "reason": "ML engineering, model development, evaluation and production workflows overlap with applied AI work."
+        },
+        {
+          "fingerprint": "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+          "relevance": 1,
+          "reason": "Python, SQL, classical ML and data science overlap with ML engineering and analytics."
+        },
+        {
+          "fingerprint": "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+          "relevance": 1,
+          "reason": "Python, scikit-learn and applied ML projects overlap with ML responsibilities."
+        },
+        {
+          "fingerprint": "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+          "relevance": 1,
+          "reason": "Python, scikit-learn, TensorFlow and ML projects overlap with applied ML work."
+        }
+      ],
+      "non_relevant": [
+        {
+          "fingerprint": "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "13eb6464ec87fff432606af987242788441fa001870599391c3e69c03aba0631",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "80cdd76fac6a29381587d557a64b1621b1584f8d1514e9213299b943660c1a53",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5",
+          "relevance": 0
+        }
+      ]
+    },
+    "strong_09": {
+      "relevant": [
+        {
+          "fingerprint": "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+          "relevance": 1,
+          "reason": "Whisper transcription and a local multimodal assistant overlap directly with speech processing and media search."
+        },
+        {
+          "fingerprint": "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+          "relevance": 1,
+          "reason": "Whisper, OCR, local media assistant and document processing overlap with speech/media processing."
+        },
+        {
+          "fingerprint": "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+          "relevance": 1,
+          "reason": "NLP and text processing overlap with transcription text classification and language processing."
+        },
+        {
+          "fingerprint": "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+          "relevance": 1,
+          "reason": "AI applications, embeddings, retrieval and FastAPI overlap with semantic search and service development."
+        },
+        {
+          "fingerprint": "13eb6464ec87fff432606af987242788441fa001870599391c3e69c03aba0631",
+          "relevance": 1,
+          "reason": "Python, retrieval, embeddings, FastAPI and evaluation overlap with semantic search and engineering."
+        }
+      ],
+      "non_relevant": [
+        {
+          "fingerprint": "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "80cdd76fac6a29381587d557a64b1621b1584f8d1514e9213299b943660c1a53",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5",
+          "relevance": 0
+        }
+      ]
+    },
+    "strong_10": {
+      "relevant": [
+        {
+          "fingerprint": "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+          "relevance": 1,
+          "reason": "Hybrid retrieval, RAG, reranking and retrieval evaluation closely match document QA and retrieval engineering."
+        },
+        {
+          "fingerprint": "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+          "relevance": 1,
+          "reason": "RAG, LangChain, vector search and FastAPI overlap with the document assistant and API work."
+        },
+        {
+          "fingerprint": "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+          "relevance": 1,
+          "reason": "RAG, FAISS, LangChain and document QA overlap directly with the retrieval-based assistant."
+        },
+        {
+          "fingerprint": "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+          "relevance": 1,
+          "reason": "RAG, LangChain, FAISS and FastAPI overlap with document QA and application engineering."
+        },
+        {
+          "fingerprint": "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+          "relevance": 1,
+          "reason": "RAG, embeddings, FAISS, LangChain and multimodal document processing overlap with the retrieval system."
+        }
+      ],
+      "non_relevant": [
+        {
+          "fingerprint": "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "13eb6464ec87fff432606af987242788441fa001870599391c3e69c03aba0631",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "80cdd76fac6a29381587d557a64b1621b1584f8d1514e9213299b943660c1a53",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5",
+          "relevance": 0
+        }
+      ]
+    },
+    "weak_08": {
+      "relevant": [
+        {
+          "fingerprint": "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+          "relevance": 1,
+          "reason": "Excel, documentation, record handling and QA support overlap with office administration tasks."
+        },
+        {
+          "fingerprint": "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+          "relevance": 1,
+          "reason": "Excel, reporting and process documentation overlap with spreadsheet reporting and record work."
+        },
+        {
+          "fingerprint": "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5",
+          "relevance": 1,
+          "reason": "Office tools, basic computer skills and documentation overlap with administrative work."
+        },
+        {
+          "fingerprint": "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+          "relevance": 1,
+          "reason": "Basic computer and office-related skills overlap with general office support."
+        },
+        {
+          "fingerprint": "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+          "relevance": 1,
+          "reason": "Excel, spreadsheet analysis and basic data handling overlap with spreadsheet work."
+        }
+      ],
+      "non_relevant": [
+        {
+          "fingerprint": "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "13eb6464ec87fff432606af987242788441fa001870599391c3e69c03aba0631",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "80cdd76fac6a29381587d557a64b1621b1584f8d1514e9213299b943660c1a53",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0",
+          "relevance": 0
+        }
+      ]
+    },
+    "weak_09": {
+      "relevant": [
+        {
+          "fingerprint": "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0",
+          "relevance": 1,
+          "reason": "Broad AI, ML, deep-learning and Python skills overlap with broad AI/technology claims; project evidence is limited in both."
+        },
+        {
+          "fingerprint": "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+          "relevance": 1,
+          "reason": "Deep learning and AI engineering skills overlap with stated AI and deep-learning interests."
+        },
+        {
+          "fingerprint": "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+          "relevance": 1,
+          "reason": "Computer vision, deep learning and AI engineering overlap with broad AI/deep-learning skill claims."
+        },
+        {
+          "fingerprint": "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+          "relevance": 1,
+          "reason": "Python, TensorFlow, Keras and ML technologies overlap with AI and deep-learning skills."
+        },
+        {
+          "fingerprint": "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+          "relevance": 1,
+          "reason": "AI engineering, machine learning and AI application development overlap with the broad AI platform claim."
+        }
+      ],
+      "non_relevant": [
+        {
+          "fingerprint": "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "13eb6464ec87fff432606af987242788441fa001870599391c3e69c03aba0631",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "80cdd76fac6a29381587d557a64b1621b1584f8d1514e9213299b943660c1a53",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5",
+          "relevance": 0
+        }
+      ]
+    },
+    "weak_10": {
+      "relevant": [
+        {
+          "fingerprint": "1b49d8516e68cd277ea74a375c9979ec14315e48130bd436f7798777b1b1eee5",
+          "relevance": 1,
+          "reason": "Office tools, basic computer skills and documentation overlap with computer fundamentals and office-related work."
+        },
+        {
+          "fingerprint": "3298402188b074da97129fb2df8fa1a95ddb8ecba55521eb29080748c8acd407",
+          "relevance": 1,
+          "reason": "Excel, documentation and office workflows overlap with spreadsheet and computer-use projects."
+        },
+        {
+          "fingerprint": "c8eb7c29a9c0d2d23917de9d98bc1e5f4598b5c3797f66919f16d857460bec0b",
+          "relevance": 1,
+          "reason": "Basic computer and office-related abilities overlap with general computer skills."
+        },
+        {
+          "fingerprint": "357f36ce588d600ba59b35f879de66c6bc864e1b404a4f6da402d464de71facf",
+          "relevance": 1,
+          "reason": "Excel, reporting and documentation overlap with spreadsheet survey and reporting work."
+        },
+        {
+          "fingerprint": "c51f3d884fa16c14f892e4f671c6235f97955d2145f374d9b735d0e6aacc9aca",
+          "relevance": 1,
+          "reason": "Excel, spreadsheet work and basic data handling overlap with survey and chart preparation."
+        }
+      ],
+      "non_relevant": [
+        {
+          "fingerprint": "f03b3466b38aa34f50648e60beab56eaababed76b94e67617741c768073157fa",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0233aa990b0ca853001dc22b91484479bd16d0cc6725f4dd1df921d0d8435d7f",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "801a0be14152f85edc4c9f37948ed209d78f74eb73da02c36379baee1f231a25",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "9eaad1e637c5d1cd7081a340f61d914445450a8534d578dc27dcd3117a7f2bf4",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "745090b8773291199c9ce05fad9d628e3a24830cebd5c30d42cdc2afc6e12473",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "13eb6464ec87fff432606af987242788441fa001870599391c3e69c03aba0631",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "8b03cda4d73dbcfb226c73734ae2ec44483f75f2beff86d19ae78a6787c044d0",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "dbec2ee0003d449fe08248acd521c966fe658b5f924a3f92aa2bba19a8e55940",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "c9f0f67b268d9764e7bf112d98a3cd664695e77f4d6c5e6b83ac0509b570f0bc",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "67fa5e34f52b78e287c240fbc3e372a843ba0a2352b071c7ee0ac051db134155",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "d6c4d16f12cdbc57747b08a2f4c7be550ad29d666081c27c428f0a9650e09938",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "80cdd76fac6a29381587d557a64b1621b1584f8d1514e9213299b943660c1a53",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0f60d2903a26de27d358f2dffd95f4cc835b8dd2455c8dabab5f6c2b07cb0971",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "cd07d875bbf89373f069ce2c57897f5e43f3cdda1242d4a215e67a518c839252",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "0c14adac93d9b7a8ca103f5bdc1399cdd69fb61c24cb8e911e1d5f6ce368c157",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "79f8d7a11fe87f1e28ab03ee1fd2f8418ec336e81b2b4e99a3bc137639775df9",
+          "relevance": 0
+        },
+        {
+          "fingerprint": "f26d2126004d8596409b6e35be6c646477a2212bd890f00b71f2c6a860f0caf0",
+          "relevance": 0
+        }
+      ]
+    }
+  }
+}

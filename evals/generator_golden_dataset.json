@@ -1,0 +1,129 @@
+
+[
+  {
+    "test_file": "weak_08.pdf",
+    "role_name": "AI Engineer",
+    "input": "Evaluate the candidate's suitability for the role of AI Engineer. Use only evidence in the candidate resume and role guide. Score technical skills (30%), projects/practical implementation (25%), relevant experience (20%), role-specific knowledge (15%), and education/certifications (10%). Return a final score from 0 to 10, criterion scores, concise reasoning, strengths, skill gaps, and improvements.",
+    "expected_output": {
+      "role": "AI Engineer",
+      "final_score": 2.2,
+      "human_score_reason": "Useful administrative and data-accuracy skills are present, but no programming, ML concepts, AI projects, or technical development evidence is provided. The low score is specific to the AI Engineer job target and should not be interpreted as an overall employability judgment."
+    },
+    "human_score": 2.2,
+    "score_reason": "Useful administrative and data-accuracy skills are present, but no programming, ML concepts, AI projects, or technical development evidence is provided. The low score is specific to the AI Engineer job target and should not be interpreted as an overall employability judgment.",
+    "evidence_source": "candidate resume + role guide (load at evaluation time)",
+    "labels_status": "provided_reference_score"
+  },
+  {
+    "test_file": "weak_09.pdf",
+    "role_name": "AI Engineer",
+    "input": "Evaluate the candidate's suitability for the role of AI Engineer. Use only evidence in the candidate resume and role guide. Score technical skills (30%), projects/practical implementation (25%), relevant experience (20%), role-specific knowledge (15%), and education/certifications (10%). Return a final score from 0 to 10, criterion scores, concise reasoning, strengths, skill gaps, and improvements.",
+    "expected_output": {
+      "role": "AI Engineer",
+      "final_score": 1.5,
+      "human_score_reason": "The resume contains extensive claims but lacks verifiable evidence, project scope, technical detail, education context, or measurable evaluation. There is no substantiated AI Engineer competency that can be assessed. The score reflects evidence quality and role fit, not proof that the candidate lacks ability."
+    },
+    "human_score": 1.5,
+    "score_reason": "The resume contains extensive claims but lacks verifiable evidence, project scope, technical detail, education context, or measurable evaluation. There is no substantiated AI Engineer competency that can be assessed. The score reflects evidence quality and role fit, not proof that the candidate lacks ability.",
+    "evidence_source": "candidate resume + role guide (load at evaluation time)",
+    "labels_status": "provided_reference_score"
+  },
+  {
+    "test_file": "weak_10.pdf",
+    "role_name": "AI Engineer",
+    "input": "Evaluate the candidate's suitability for the role of AI Engineer. Use only evidence in the candidate resume and role guide. Score technical skills (30%), projects/practical implementation (25%), relevant experience (20%), role-specific knowledge (15%), and education/certifications (10%). Return a final score from 0 to 10, criterion scores, concise reasoning, strengths, skill gaps, and improvements.",
+    "expected_output": {
+      "role": "AI Engineer",
+      "final_score": 1.8,
+      "human_score_reason": "The resume demonstrates general computer literacy, communication, teamwork, spreadsheet-based academic work, and interest in AI. However, it provides no documented programming, SQL, ML implementation, AI application, evaluation, API, testing, or deployment evidence. The low score is specific to the AI Engineer role and should not be interpreted as an overall employability or future-potential judgment."
+    },
+    "human_score": 1.8,
+    "score_reason": "The resume demonstrates general computer literacy, communication, teamwork, spreadsheet-based academic work, and interest in AI. However, it provides no documented programming, SQL, ML implementation, AI application, evaluation, API, testing, or deployment evidence. The low score is specific to the AI Engineer role and should not be interpreted as an overall employability or future-potential judgment.",
+    "evidence_source": "candidate resume + role guide (load at evaluation time)",
+    "labels_status": "provisional_reference_score"
+  },
+  {
+    "test_file": "average_08.pdf",
+    "role_name": "AI Engineer",
+    "input": "Evaluate the candidate's suitability for the role of AI Engineer. Use only evidence in the candidate resume and role guide. Score technical skills (30%), projects/practical implementation (25%), relevant experience (20%), role-specific knowledge (15%), and education/certifications (10%). Return a final score from 0 to 10, criterion scores, concise reasoning, strengths, skill gaps, and improvements.",
+    "expected_output": {
+      "role": "AI Engineer",
+      "final_score": 5.5,
+      "human_score_reason": "The candidate demonstrates data preparation, stakeholder communication, and basic Python automation skills that can transfer to AI engineering. However, AI-specific experience is introductory, with limited evidence of model selection, robust evaluation, deployment, or error analysis. The profile is more aligned with a junior data analyst or AI-adjacent role."
+    },
+    "human_score": 5.5,
+    "score_reason": "The candidate demonstrates data preparation, stakeholder communication, and basic Python automation skills that can transfer to AI engineering. However, AI-specific experience is introductory, with limited evidence of model selection, robust evaluation, deployment, or error analysis. The profile is more aligned with a junior data analyst or AI-adjacent role.",
+    "evidence_source": "candidate resume + role guide (load at evaluation time)",
+    "labels_status": "provided_reference_score"
+  },
+  {
+    "test_file": "average_09.pdf",
+    "role_name": "AI Engineer",
+    "input": "Evaluate the candidate's suitability for the role of AI Engineer. Use only evidence in the candidate resume and role guide. Score technical skills (30%), projects/practical implementation (25%), relevant experience (20%), role-specific knowledge (15%), and education/certifications (10%). Return a final score from 0 to 10, criterion scores, concise reasoning, strengths, skill gaps, and improvements.",
+    "expected_output": {
+      "role": "AI Engineer",
+      "final_score": 5.2,
+      "human_score_reason": "The candidate has basic programming and some ML/API AI exposure, but most work appears tutorial-scale. Evidence of model evaluation and validation is limited, and there is no demonstrated ML deployment or monitoring. A resume-matching prototype is relevant, but keyword overlap alone is not sufficient evidence of a reliable hiring model."
+    },
+    "human_score": 5.2,
+    "score_reason": "The candidate has basic programming and some ML/API AI exposure, but most work appears tutorial-scale. Evidence of model evaluation and validation is limited, and there is no demonstrated ML deployment or monitoring. A resume-matching prototype is relevant, but keyword overlap alone is not sufficient evidence of a reliable hiring model.",
+    "evidence_source": "candidate resume + role guide (load at evaluation time)",
+    "labels_status": "provided_reference_score"
+  },
+  {
+    "test_file": "average_10.pdf",
+    "role_name": "AI Engineer",
+    "input": "Evaluate the candidate's suitability for the role of AI Engineer. Use only evidence in the candidate resume and role guide. Score technical skills (30%), projects/practical implementation (25%), relevant experience (20%), role-specific knowledge (15%), and education/certifications (10%). Return a final score from 0 to 10, criterion scores, concise reasoning, strengths, skill gaps, and improvements.",
+    "expected_output": {
+      "role": "AI Engineer",
+      "final_score": 6.0,
+      "human_score_reason": "The candidate demonstrates beginner-to-intermediate ML experience through churn prediction using logistic regression and decision trees, accuracy/F1 evaluation, TF-IDF with Naive Bayes for sentiment analysis, a basic API chatbot, and a short data internship. However, the projects appear tutorial-scale, with shallow error analysis and limited evidence of deployment, testing, monitoring, or retrieval evaluation."
+    },
+    "human_score": 6.0,
+    "score_reason": "The candidate demonstrates beginner-to-intermediate ML experience through churn prediction using logistic regression and decision trees, accuracy/F1 evaluation, TF-IDF with Naive Bayes for sentiment analysis, a basic API chatbot, and a short data internship. However, the projects appear tutorial-scale, with shallow error analysis and limited evidence of deployment, testing, monitoring, or retrieval evaluation.",
+    "evidence_source": "candidate resume + role guide (load at evaluation time)",
+    "labels_status": "provisional_reference_score"
+  },
+  {
+    "test_file": "strong_08.pdf",
+    "role_name": "AI Engineer",
+    "input": "Evaluate the candidate's suitability for the role of AI Engineer. Use only evidence in the candidate resume and role guide. Score technical skills (30%), projects/practical implementation (25%), relevant experience (20%), role-specific knowledge (15%), and education/certifications (10%). Return a final score from 0 to 10, criterion scores, concise reasoning, strengths, skill gaps, and improvements.",
+    "expected_output": {
+      "role": "AI Engineer",
+      "final_score": 8.3,
+      "human_score_reason": "The candidate demonstrates applied AI experience, ranking metrics, awareness of data leakage, multiple model baselines, and a recommendation project. The resume appropriately distinguishes offline results from online experiments that were not run. Remaining gaps include limited evidence of deep learning, production-scale systems, and measurable business impact."
+    },
+    "human_score": 8.3,
+    "score_reason": "The candidate demonstrates applied AI experience, ranking metrics, awareness of data leakage, multiple model baselines, and a recommendation project. The resume appropriately distinguishes offline results from online experiments that were not run. Remaining gaps include limited evidence of deep learning, production-scale systems, and measurable business impact.",
+    "evidence_source": "candidate resume + role guide (load at evaluation time)",
+    "labels_status": "provided_reference_score"
+  },
+  {
+    "test_file": "strong_09.pdf",
+    "role_name": "AI Engineer",
+    "input": "Evaluate the candidate's suitability for the role of AI Engineer. Use only evidence in the candidate resume and role guide. Score technical skills (30%), projects/practical implementation (25%), relevant experience (20%), role-specific knowledge (15%), and education/certifications (10%). Return a final score from 0 to 10, criterion scores, concise reasoning, strengths, skill gaps, and improvements.",
+    "expected_output": {
+      "role": "AI Engineer",
+      "final_score": 8.1,
+      "human_score_reason": "The candidate demonstrates speech and NLP workflows, WER evaluation, API reliability, testing, and sound engineering thinking. Remaining gaps include limited evidence of dataset scale, deployment, cost and latency outcomes, and broader ML fundamentals."
+    },
+    "human_score": 8.1,
+    "score_reason": "The candidate demonstrates speech and NLP workflows, WER evaluation, API reliability, testing, and sound engineering thinking. Remaining gaps include limited evidence of dataset scale, deployment, cost and latency outcomes, and broader ML fundamentals.",
+    "evidence_source": "candidate resume + role guide (load at evaluation time)",
+    "labels_status": "provided_reference_score"
+  },
+  {
+    "test_file": "strong_10.pdf",
+    "role_name": "AI Engineer",
+    "input": "Evaluate the candidate's suitability for the role of AI Engineer. Use only evidence in the candidate resume and role guide. Score technical skills (30%), projects/practical implementation (25%), relevant experience (20%), role-specific knowledge (15%), and education/certifications (10%). Return a final score from 0 to 10, criterion scores, concise reasoning, strengths, skill gaps, and improvements.",
+    "expected_output": {
+      "role": "AI Engineer",
+      "final_score": 8.8,
+      "human_score_reason": "The candidate demonstrates strong applied AI engineering through a RAG document assistant with a manually reviewed evaluation set, retrieval metrics, citation coverage, answerability and refusal checks, hybrid retrieval and reranking, FastAPI validation, structured logs, timeouts, pytest, and latency measurement. Remaining gaps include limited evidence of production scale, sustained real-world usage, and large-scale ownership."
+    },
+    "human_score": 8.8,
+    "score_reason": "The candidate demonstrates strong applied AI engineering through a RAG document assistant with a manually reviewed evaluation set, retrieval metrics, citation coverage, answerability and refusal checks, hybrid retrieval and reranking, FastAPI validation, structured logs, timeouts, pytest, and latency measurement. Remaining gaps include limited evidence of production scale, sustained real-world usage, and large-scale ownership.",
+    "evidence_source": "candidate resume + role guide (load at evaluation time)",
+    "labels_status": "provisional_reference_score"
+  }
+]
